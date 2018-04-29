@@ -32,3 +32,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# server-composer
+server/composer.lock
+server/vendor/
