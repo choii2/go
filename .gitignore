@@ -36,3 +36,6 @@ sysinfo.txt
 # server-composer
 server/composer.lock
 server/vendor/
+
+# idea
+*/.idea/*
