@@ -5,7 +5,7 @@ using UnityEngine;
 // ルームに関する情報を保持するモデルクラス
 public class PhotonRoomModel : MonoBehaviour {
 
-	private const string defaultRoomName = "test";
+	private const string DEFAULT_ROOM_NAME = "test";
 
 	// ルーム名
 	public string roomName { get; private set; }
@@ -15,9 +15,9 @@ public class PhotonRoomModel : MonoBehaviour {
 	public TypedLobby typedLobby { get; private set; }
 
 	public PhotonRoomModel() {
-		this.roomName = defaultRoomName;
+		this.roomName = DEFAULT_ROOM_NAME;
 		this.roomOptions = new RoomOptions();
-		this.typedLobby = new TypedLobby();
+		this.typedLobby = TypedLobby.Default;
 	}
 
 }

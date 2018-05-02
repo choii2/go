@@ -27,6 +27,10 @@ public class PhotonController : MonoBehaviour {
 	// ルームジョイン時イベント
 	void OnJoinedRoom() {
 		Debug.Log("ルームにジョインしました");
+
+		// TODO 初期値マジックナンバー対応
+		PhotonNetwork.Instantiate("SD_unitychan_humanoid", new Vector3(0, 0, 0), Quaternion.identity, 0);
+		PhotonNetwork.Instantiate("target", new Vector3(20, 5, -2), Quaternion.identity, 0);
 	}
 
 	// 誰かがルームにジョイン時イベント
